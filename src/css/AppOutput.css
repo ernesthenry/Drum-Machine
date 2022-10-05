@@ -1,0 +1,5 @@
+.AppOutput {
+  font-size: calc(3rem + 2.5vw);
+  text-transform: uppercase;
+  font-weight: bold;
+}

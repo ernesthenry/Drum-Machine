@@ -1,0 +1,19 @@
+.AppInput {
+  /* display the nine clickable elements in a 3x3 grid, with 120px by 120px cells */
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  /* grid auto rows matching the columns to have the buuttons be (rounded) squares */
+  grid-auto-rows: 120px;
+  /* separate the cells from one another */
+  grid-gap: 15px;
+}
+
+/* on smaller viewports, reduce the size of the making up the buttons */
+@media (max-width: 500px) {
+  .AppInput {
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows: 100px;
+  }
+}
+
+/** the buttons themselves are styled in the JS script thanks to styled components **/

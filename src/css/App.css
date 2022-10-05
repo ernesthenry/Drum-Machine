@@ -1,0 +1,18 @@
+.App {
+  /* display the .AppOutput and .AppInput containers in grid cells which reside side by side, and are at least 400px wide  */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* have the implicit rows be 150px (this allows the .app__support container to occupy some space even without text) */
+  grid-auto-rows: 150px;
+  /* center the grid items in their respective cell */
+  justify-items: center;
+  /* include padding to almost center the elements in the page */
+  padding: 25vh 0;
+}
+
+/* for smaller viewports, reduce the vertical padding of the parent container */
+@media (max-width: 500px) {
+  .App {
+    padding: 10vh 0;
+  }
+}
